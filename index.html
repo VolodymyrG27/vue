@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <section class="news" id="app">
+            <div class="container mt-5">
+               <h1>Write two numbers</h1>
+               <hr>
+               <form class="form-inline">
+                   <input class="form-control mr-4" v-model.number="a">
+                   <select class="form-control mr-4" v-model="operator">
+                        <option>+</option>
+                        <option>-</option>
+                        <option>*</option>
+                        <option>/</option>
+                    </select>
+                    <input class="form-control mr-4" v-model.number="b">
+               </form>
+               <hr>
+               <h2>Result: {{ a }} {{ operator }} {{ b }} =  {{ c }}</h2> 
+               <hr>
+            </div>
+        </section>
+
+
+            
+    
+        
+    
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="script.js"></script>
+</html>
